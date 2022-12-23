@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datetime superapp</title>
+<link rel="stylesheet" href="style.css">
+<script  src="src/main.js" type="module"></script>
+</head>
+
+<body>
+  <form id="datecalc">
+    <h3>Калькулятор дат</h3>
+      <label>
+     <strong>Первая дата:</strong>
+    <input type="date" name="firstDate" />
+   </label>
+  <label>
+     <strong>Вторая дата:</strong>
+     <input type="date" name="secondDate" />
+  </label>
+  <div class="result"><button type="submit">Расчитать промежуток</button></div>
+  <p id="datecalc__result"></p>
+<hr>
+    <p id="output">
+    </p>
+    <div class="container">
+      <h1 class="countdown-title">Countdown Clock</h1>
+      <div id="countdown" class="countdown">
+        <div class="countdown-number">
+          <span class="days countdown-time"></span>
+          <span class="countdown-text">Days</span>
+        </div>
+        <div class="countdown-number">
+          <span class="hours countdown-time"></span>
+          <span class="countdown-text">Hours</span>
+        </div>
+        <div class="countdown-number">
+          <span class="minutes countdown-time"></span>
+          <span class="countdown-text">Minutes</span>
+        </div>
+        <div class="countdown-number">
+          <span class="seconds countdown-time"></span>
+          <span class="countdown-text">Seconds</span>
+        </div>
+      </div>
+  </div>
+  <button class="custom-btn btn-1"type="button" id="start">Start</button>
+  <button class="custom-btn btn-1"type="button" id="stop">Stop</button>
+  <audio src="Gong.mp3" autoplay="autoplay"></audio>
+  
+ 
+   </body>
+</html>
